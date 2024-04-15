@@ -20,8 +20,9 @@ BR/KN Keyboard (Broken)
 
 ## Introduction
 
-The Broken (stylized BR/KN) keyboard is named because 
-  a. it's a split (a broken unibody)
+The Broken (stylized BR/KN) keyboard is named because... 
+
+  1. it's a split (a broken unibody)
   2. Broken by Seether was my wife and mine's wedding song that I wanted to honor (queue awww's).  Ok enough on that, let's dig in.
 
 I've always preferred small keebs and low switch counts.  The idea for this keyboard was to design a small split that also incorporated two trackballs (can use one for pointing, one for scrolling!), and have some other goodies like LEDs and tact switches for occasional needs like macros or toggling the RGB.
