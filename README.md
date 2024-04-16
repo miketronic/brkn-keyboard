@@ -30,7 +30,7 @@ I've always preferred small keebs and low switch counts.  The idea for this keyb
 
 But how only 18 total letter keys?  By building a custom firmware layout and using combos for less used letters, or where they "feel best".  I performed some studies on letter frequency in the English language and most common bigrams and trigrams to determind the layout.  
 
-![keyboard-layout](http://www.keyboard-layout-editor.com/#/gists/a802ce065038acc9772d7e07f0fe1896)
+![keyboard-layout]([http://www.keyboard-layout-editor.com/#/gists/a802ce065038acc9772d7e07f0fe1896](http://www.keyboard-layout-editor.com/#/gists/a802ce065038acc9772d7e07f0fe1896))
 
 
 ## Keycaps
