@@ -5,6 +5,7 @@ BR/KN Keyboard (Broken)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ![BR/KN 001](images/20240415_103532.jpg)
+![BR/KN 002](images/20240415_103541.jpg)
 
 [More pictures here](images/)
 
@@ -39,3 +40,9 @@ But how only 18 total letter keys?  By building a custom firmware layout and usi
 ## Keycaps
 
 As noted in the *Features*, I chose a narrower keyswitch spacing and thus they require narrower keycaps.  CFX keycaps are commercially available from Chosfox, or you can print your own, for which I've included files.  They easily print upside down on an FDM printer, and I use a textured baseplate.
+
+
+
+## The predecessor (CAP 5)
+![CAP5 001](images/20240415_134633.jpg)
+[Another shot](images/20240415_134642.jpg)
