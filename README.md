@@ -6,7 +6,7 @@ BR/KN Keyboard (Broken)
 
 ![BR/KN 001](images/20240415_103532.jpg)
 
-[More pictures here](https://imgur.com/a/LNFxImS)
+[More pictures here](images/)
 
 ## Features
 
