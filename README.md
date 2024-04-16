@@ -4,7 +4,7 @@ BR/KN Keyboard (Broken)
 [![version](https://img.shields.io/badge/version-1.0.0-blue)](#)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-![10x](pictures/x.jpg)
+![BR/KN 001](images/20240415_103532.jpg)
 
 [More pictures here](https://imgur.com/a/LNFxImS)
 
