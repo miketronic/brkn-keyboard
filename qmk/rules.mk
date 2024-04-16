@@ -1,0 +1,13 @@
+
+MOUSEKEY_ENABLE     	= yes
+BOOTMAGIC_ENABLE    	= yes
+TAP_DANCE_ENABLE    	= yes
+MACROS_ENABLED      	= yes
+COMBO_ENABLE		    = yes
+RGBLIGHT_ENABLE 		= yes
+
+SERIAL_DRIVER           = vendor
+WS2812_DRIVER           = vendor
+
+POINTING_DEVICE_ENABLE = yes
+POINTING_DEVICE_DRIVER = pmw3360
