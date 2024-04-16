@@ -45,7 +45,6 @@ As noted in the *Features*, I chose a narrower keyswitch spacing and thus they r
 
 ## The predecessor (CAP 5)
 
-![BR/KN 002](images/20240415_103541.jpg)
-![CAP5 001](images/20240415_134633.jpg)
+![CAP5 001](images/20240416_134633.jpg)
 
-[Another shot](images/20240415_134642.jpg)
+[Another shot](images/20240416_134642.jpg)
