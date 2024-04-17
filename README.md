@@ -9,6 +9,8 @@ BR/KN Keyboard (Broken)
 
 [More pictures here](images/)
 
+
+
 ## Features
 
 - 28 keys (plus 2 small tactiles, bonus!)
@@ -19,6 +21,8 @@ BR/KN Keyboard (Broken)
 - Waveshare RP2040 Zero controllers
 - QMK firmware
 
+
+
 ## Introduction
 
 The Broken (stylized BR/KN) keyboard is named because... 
@@ -27,6 +31,7 @@ The Broken (stylized BR/KN) keyboard is named because...
   2. Broken by Seether was my wife and mine's wedding song that I wanted to honor it and the day (queue awww's).  Ok enough on that, let's dig in.
 
 I've always preferred small keebs and low switch counts.  The idea for this keyboard was to design a small split that also incorporated two trackballs (can use one for pointing, one for scrolling!), and have some other goodies like LEDs and tact switches for occasional needs like macros or toggling the RGB.
+
 
 
 ## Keymap
@@ -39,9 +44,13 @@ The biggest thing with starting a layout like this is to accept the fact that yo
 
 ![br-kn](https://github.com/miketronic/brkn-keyboard/assets/2554604/c3fed3f3-c46d-47f9-8319-7c291844036c)
 
+
+
 ## Keycaps
 
 As noted in the *Features*, I chose a narrower keyswitch spacing and thus they require narrower keycaps.  CFX keycaps are commercially available from Chosfox, or you can print your own, for which I've included files in the keycaps folder.  They easily print upside down on an FDM printer, and I use a textured baseplate.
+
+
 
 ## Miscellaneous Notes
 
@@ -50,11 +59,14 @@ As noted in the *Features*, I chose a narrower keyswitch spacing and thus they r
 - The trackballs I used are 16mm polished mineral spheres I found on AliExpress.  I picked up a few different types of mineral and some were too large due to making a rock into a sphere not an exact science, so be mindful of that.  Alternatively, you can use human-made materials for a perfect spec 16mm ball.
 
 
+
 ## The predecessor (CAP 5)
 
 ![CAP5 001](images/20240416_134633.jpg)
 
 [Another shot](images/20240416_134642.jpg)
+
+
 
 Contact with comments, questions, or if you build it!
 - sepultor @discord
