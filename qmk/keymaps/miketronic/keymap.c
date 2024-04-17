@@ -285,3 +285,16 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
 				return TAPPING_TERM;
 		}
 }
+
+void keyboard_post_init_user(void) {
+    pointing_device_set_cpi_on_side(true, 100); //Set cpi on left side to a low value for slower scrolling.
+    pointing_device_set_cpi_on_side(false, 2000); //Set cpi on right side to a reasonable value for mousing.
+}
+
+report_mouse_t pointing_device_task_combined_user(report_mouse_t left_report, report_mouse_t right_report) {
+    left_report.h = left_report.x;
+    left_report.v = left_report.y;
+    left_report.x = 0;
+    left_report.y = 0;
+    return pointing_device_combine_reports(left_report, right_report);
+}
