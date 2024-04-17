@@ -43,6 +43,11 @@ The biggest thing with starting a layout like this is to accept the fact that yo
 
 As noted in the *Features*, I chose a narrower keyswitch spacing and thus they require narrower keycaps.  CFX keycaps are commercially available from Chosfox, or you can print your own, for which I've included files in the keycaps folder.  They easily print upside down on an FDM printer, and I use a textured baseplate.
 
+## Miscellaneous Notes
+
+- For the switchplate, I put the plate on then soldered the switches.  Makes sure you like your choice of filament that you printed the plate with because you're stuck with it ;).
+- If you PCBA the board and the USB failed during manufacture, you can solder on a TRRS connector.  I have it designed to mount the TRRS on the bottom of the board to hide the connector and end of the cable within the case.  Also, you'll need to bodge two wires on the board to use TRRS, let me know if you need help if you go this route.
+- The trackballs I used are 16mm polished mineral spheres I found on AliExpress.  I picked up a few different types of mineral and some were too large due to making a rock into a sphere not an exact science, so be mindful of that.  Alternatively, you can use human-made materials for a perfect spec 16mm ball.
 
 
 ## The predecessor (CAP 5)
