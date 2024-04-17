@@ -12,7 +12,7 @@ BR/KN Keyboard (Broken)
 ## Features
 
 - 28 keys (plus 2 small tactiles, bonus!)
-- 2x 16mm trackballs - PMw3360 sensors
+- 2x 16mm trackballs - PMW3360 sensors
 - USB connection between halves (or TRRS option as backup)
 - Low profile choc switches with CFX spacing (closer spacing then standard choc, only caps of size 16.50mm x 16.50mm will fit)
 - RGB lighting
