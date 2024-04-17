@@ -55,3 +55,7 @@ As noted in the *Features*, I chose a narrower keyswitch spacing and thus they r
 ![CAP5 001](images/20240416_134633.jpg)
 
 [Another shot](images/20240416_134642.jpg)
+
+Contact with comments, questions, or if you build it!
+- sepultor @discord
+- mxb540@gmail.com
