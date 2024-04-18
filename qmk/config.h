@@ -64,15 +64,14 @@
 #    define SPI_MOSI_PIN GP11
 
 // PMW3360 settings
-#    define PMW3360_CPI 12000
-#    define PMW3360_CS_DIVISOR 8
+//#    define PMW3360_CPI 12000
+//#    define PMW3360_CS_DIVISOR 8
 //#    define POINTING_DEVICE_TASK_THROTTLE_MS 10
-//#    define POINTING_DEVICE_ROTATION_270
-#    define POINTING_DEVICE_ROTATION_0
+#    define POINTING_DEVICE_ROTATION_180_RIGHT
+#    define POINTING_DEVICE_INVERT_X_RIGHT
+#    define POINTING_DEVICE_COMBINED
 //#    define ROTATIONAL_TRANSFORM_ANGLE 97
-#    define POINTING_DEVICE_INVERT_Y
-#    define MOUSE_EXTENDED_REPORT
-
+//#    define MOUSE_EXTENDED_REPORT
 
 // Mouse key speed and acceleration.
 #    undef MOUSEKEY_DELAY
