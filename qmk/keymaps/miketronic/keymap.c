@@ -273,18 +273,280 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
     }
 }
 
-	uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record){
-		switch (keycode) {
-			case CCCV:
-				return 80;
-      case SSPC:
-				return 80;
-      case SENT:
+
+uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record){
+switch (keycode) {
+	  case CCCV:
 				return 80;
 			default:
 				return TAPPING_TERM;
 		}
 }
+
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case M01:
+            if (record->event.pressed) {
+                SEND_STRING("//a11");
+            }
+            return false;
+            break;
+
+        case M02:
+            if (record->event.pressed) {
+                SEND_STRING("//a12");
+            }
+            return false;
+            break;
+
+        case M03:
+            if (record->event.pressed) {
+                SEND_STRING("//a08");
+            }
+            return false;
+            break;
+
+        case M04:
+            if (record->event.pressed) {
+                SEND_STRING("//a09");
+            }
+            return false;
+            break;
+
+        case M05:
+            if (record->event.pressed) {
+                SEND_STRING("//th");
+            }
+            return false;
+            break;
+
+        case M06:
+            if (record->event.pressed) {
+                SEND_STRING("//re");
+            }
+            return false;
+            break;
+
+        case M07:
+            if (record->event.pressed) {
+                SEND_STRING("//yw");
+            }
+            return false;
+            break;
+
+        case M08:
+            if (record->event.pressed) {
+                tap_random_base64();
+            }
+            return false;
+            break;
+
+        case EMAIL:
+            if (record->event.pressed) {
+                SEND_STRING("//email\n");
+            }
+            return false;
+            break;
+
+        case CCCV: // One key copy/paste
+            if (record->event.pressed) {
+                copy_paste_timer = timer_read();
+            } else {
+                if (timer_elapsed(copy_paste_timer) > TAPPING_TERM) { // Hold, copy
+                    tap_code16(LCTL(KC_C));
+                } else { // Tap, paste
+                    tap_code16(LCTL(KC_V));
+                }
+            }
+            return false;
+            break;
+
+        case SSPC: // Hold shift, Tap space
+            if (record->event.pressed) {
+                copy_paste_timer = timer_read();
+                register_code(KC_LSFT); // Hold, shift
+            } else {
+                unregister_code(KC_LSFT);
+                if (timer_elapsed(copy_paste_timer) < TAPPING_TERM) { 
+                    tap_code(KC_SPC);
+                }
+            }
+            return false;
+            break;
+
+        case SENT: // Hold shift, Tap Enter
+            if (record->event.pressed) {
+                copy_paste_timer = timer_read();
+                register_code(KC_RSFT); // Hold, shift
+            } else {
+                unregister_code(KC_RSFT);
+                if (timer_elapsed(copy_paste_timer) < TAPPING_TERM) { 
+                    tap_code(KC_ENT);
+                }
+            }
+            return false;
+            break;
+            
+        case ENDHOME:
+            if (record->event.pressed) {
+                copy_paste_timer = timer_read();
+            } else {
+                if (timer_elapsed(copy_paste_timer) > TAPPING_TERM) {
+                    tap_code16(KC_HOME);
+                } else {
+                    tap_code16(KC_END);
+                }
+            }
+            return false;
+            break;
+
+        case UNDOER:
+            if (record->event.pressed) {
+                copy_paste_timer = timer_read();
+            } else {
+                if (timer_elapsed(copy_paste_timer) > TAPPING_TERM) {
+                    SEND_STRING(SS_LCTL("y"));
+                } else {
+                    SEND_STRING(SS_LCTL("z"));
+                }
+            }
+            return false;
+            break;
+
+        case SYM1:
+            if (record->event.pressed) {
+                copy_paste_timer = timer_read();
+            } else {
+                if (timer_elapsed(copy_paste_timer) > TAPPING_TERM) {
+                    tap_code16(KC_CIRC);
+                } else {
+                    tap_code16(KC_ASTR);
+                }
+            }
+            return false;
+            break;
+
+        case SYM2:
+            if (record->event.pressed) {
+                copy_paste_timer = timer_read();
+            } else {
+                if (timer_elapsed(copy_paste_timer) > TAPPING_TERM) {
+                    tap_code16(KC_PLUS);
+                } else {
+                    tap_code16(KC_EQL);
+                }
+            }
+            return false;
+            break;
+
+        case SYM3:
+            if (record->event.pressed) {
+                copy_paste_timer = timer_read();
+            } else {
+                if (timer_elapsed(copy_paste_timer) > TAPPING_TERM) {
+                    tap_code16(KC_SCLN);
+                } else {
+                    tap_code16(KC_COLN);
+                }
+            }
+            return false;
+            break;
+
+        case SYM4:
+            if (record->event.pressed) {
+                copy_paste_timer = timer_read();
+            } else {
+                if (timer_elapsed(copy_paste_timer) > TAPPING_TERM) {
+                    tap_code16(KC_BSLS);
+                } else {
+                    tap_code16(KC_SLSH);
+                }
+            }
+            return false;
+            break;
+
+        case SYM5:
+            if (record->event.pressed) {
+                copy_paste_timer = timer_read();
+            } else {
+                if (timer_elapsed(copy_paste_timer) > TAPPING_TERM) {
+                    tap_code16(KC_AMPR);
+                } else {
+                    tap_code16(KC_PIPE);
+                }
+            }
+            return false;
+            break;
+
+        case SYM6:
+            if (record->event.pressed) {
+                copy_paste_timer = timer_read();
+            } else {
+                if (timer_elapsed(copy_paste_timer) > TAPPING_TERM) {
+                    tap_code16(KC_DQUO);
+                } else {
+                    tap_code16(KC_QUOT);
+                }
+            }
+            return false;
+            break;
+
+        case SYM7:
+            if (record->event.pressed) {
+                copy_paste_timer = timer_read();
+            } else {
+                if (timer_elapsed(copy_paste_timer) > TAPPING_TERM) {
+                    tap_code16(KC_HASH);
+                } else {
+                    tap_code16(KC_AT);
+                }
+            }
+            return false;
+            break;
+
+        case SYM8:
+            if (record->event.pressed) {
+                copy_paste_timer = timer_read();
+            } else {
+                if (timer_elapsed(copy_paste_timer) > TAPPING_TERM) {
+                    tap_code16(KC_DLR);
+                } else {
+                    tap_code16(KC_PERC);
+                }
+            }
+            return false;
+            break;
+
+        case ANGLE:
+            if (record->event.pressed) {
+                SEND_STRING("<>");
+                tap_code(KC_LEFT);
+            }
+            return false;
+            break;
+
+        case BRACES:
+            if (record->event.pressed) {
+                SEND_STRING("[]");
+                tap_code(KC_LEFT);
+            }
+            return false;
+            break;
+
+        case PAREN:
+            if (record->event.pressed) {
+                SEND_STRING("()");
+                tap_code(KC_LEFT);
+            }
+            return false;
+            break;
+
+    }
+    return true;
+}
+
+
 
 void keyboard_post_init_user(void) {
     pointing_device_set_cpi_on_side(true, 100); //Set cpi on left side to a low value for slower scrolling.
