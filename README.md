@@ -70,5 +70,5 @@ As noted in the *Features*, I chose a narrower keyswitch spacing and thus they r
 
 
 Contact with comments, questions, or if you build it!
-- sepultor @discord
+- m1ketronic @discord
 - mxb540@gmail.com
